@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hot Restaurants</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="d-flex justify-content-center"><span class="fa fa-fire"></span> Hot Restaurants</h1>
+            <hr>
+            <h3 class=" d-flex justify-content-center">Book your seat before they are all gone</h3>
+            <div class=" d-flex justify-content-center">
+
+                <a href="/reservationForm.html" class="pr-1"><button class="btn btn-danger btn-lg"><span
+                            class="fa fa-credit-card"></span> Make Reservations</button></a>
+                <a href="/HomePage.html" class="pr-1"><button class="btn btn-lg"><span
+                            class="fa fa-home"></span></button></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card d-flex justify-content-center" style="width: 18rem;">
+            <div class="card-header">
+                Current Reservations
+            </div>
+            <div class="card-body">
+                <h5 class="card-title table">Table #1</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item Id border-none">Id:</li>
+                    <li class="list-group-item Name">Name: </li>
+                    <li class="list-group-item Email">Email:</li>
+                    <li class="list-group-item Phone">Phone:</li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="card d-flex justify-content-center" style="width: 18rem;">
+            <div class="card-header">
+                Wait List
+            </div>
+            <div class="card-body">
+                <h5 class="card-title table">Table #1</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item Id">Id:</li>
+                    <li class="list-group-item Name">Name:</li>
+                    <li class="list-group-item Email">Email:</li>
+                    <li class="list-group-item Phone">Phone:</li>
+                </ul>
+
+            </div>
+        </div>
+        <p class="pl-1 d-flex justify-content-center">
+            <section class="my - 2">Control Panel</section>
+            <a href="#">Clear Table</a> |
+            <a href="#">API Table Link</a> |
+            <a href="#">API Wait List</a>
+
+        </p>
+    </div>
+</body>
+
+</html>
