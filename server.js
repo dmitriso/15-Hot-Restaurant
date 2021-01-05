@@ -5,22 +5,23 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 app.use(express.json());
 
 // HTML ROUTES
-app.get('/tables', function (req, res) {
-    res.sendFile(path.join(__dirname, './tables.html'));
-});
+// app.get('/tables', function (req, res) {
+//     res.sendFile(path.join(__dirname, './tables.html'));
+// });
 
-app.get('/reserve', function (req, res) {
-    res.sendFile(path.join(__dirname, './reserve.html'));
-});
+// app.get('/reserve', function (req, res) {
+//     res.sendFile(path.join(__dirname, './reserve.html'));
+// });
 
-app.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname, './view.html'));
-});
+// app.get('*', function (req, res) {
+//     res.sendFile(path.join(__dirname, './view.html'));
+// });
 
-
+require('./public/views/htmlroutes.js')(app);
 
 
 
