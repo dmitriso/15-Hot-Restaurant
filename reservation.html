@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hot Restaurants</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="d-flex justify-content-center"><span class="fa fa-fire"></span> Hot Restaurants</h1>
+            <hr>
+            <h3 class=" d-flex justify-content-center">Book your seat before they are all gone</h3>
+            <div class=" d-flex justify-content-center">
+                
+                            <a href="/reservationView.html" class="pr-1"><button class="btn btn-primary btn-lg"><span
+                            class="fa fa-list-alt"></span> View Tables</button></a>
+                            <a href="/HomePage.html"><button class="btn btn-lg"><span
+                            class="fa fa-home"></span></button></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <form>
+        <div class="card-header">
+            Table Reservation
+        </div>
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="Name" class="form-control" id="Name">
+        </div>
+        <div class="mb-3">
+            <label for="Phone" class="form-label">Phone Number</label>
+            <input type="phone" class="form-control" id="Phone">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            
+        </div>
+        <div class="mb-3">
+            <label for="id" class="form-label">Unique Id</label>
+            <input type="id" class="form-control" id="id">
+        </div>
+        
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+  
+    <p class="pl-1 d-flex justify-content-center">
+        <section class="my - 2">Control Panel</section>
+        <a href="#">Clear Table</a> |
+        <a href="#">API Table Link</a> |
+        <a href="#">API Wait List</a>
+        
+    </p>
+</div>
+</body>
+
+</html>
